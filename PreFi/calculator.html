@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Calculator | PreFinal</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="calculator.js"></script> 
+    </head>
+    <body>
+        <div class="calculator" id="calculator">
+            <div class="display">
+                <input id="textDisplay" />
+                <button onclick="clearInput();" id="clearButton">C</button>
+            </div>
+            <div class="button_grid">
+                <table>
+                    <tr>
+                        <td><button onclick="memoryRecall();" id="MR">MR</button></td>
+                        <td><button onclick="memoryClear();" id="MC">MC</button></td>
+                        <td><button onclick="mulNums(); white();" id="mul">*</button></td>
+                        <td><button onclick="divNums(); white();" id="div">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inputNumber(7); red();" id="seven">7</button></td>
+                        <td><button onclick="inputNumber(8); green();" id="eight">8</button></td>
+                        <td><button onclick="inputNumber(9); red();" id="nine">9</button></td>
+                        <td><button onclick="addNums(); white();" id="add">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inputNumber(4); green();" id="four">4</button></td>
+                        <td><button onclick="inputNumber(5); red();" id="five">5</button></td>
+                        <td><button onclick="inputNumber(6); green();" id="six">6</button></td>
+                        <td><button onclick="subNums(); white();" id="sub">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inputNumber(1); red();" id="one">1</button></td>
+                        <td><button onclick="inputNumber(2); green();" id="two">2</button></td>
+                        <td><button onclick="inputNumber(3); red();" id="three">3</button></td>
+                        <td><button onclick="equalsAns(); white();" id="equ">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><button onclick="inputNumber(0); green();" id="zero">0</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
